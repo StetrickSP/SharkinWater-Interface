@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #1d014e, #000428);
+    overflow-x: hidden;
+    color: white;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 200px;
+    margin-right: 300px;
+    transition: 0.5s ease-in-out;
+}
+.logo img:hover {
+    transform: scale(1.15);
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #00d8ff;
+}
+
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h1 {
+    font-size: 50px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.hero h2 {
+    font-size: 20px;
+    font-weight: lighter;
+    margin-bottom: 40px;
+}
+
+.planet {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin: 50px auto;
+    background: radial-gradient(circle, #1e4e79, #000);
+    border-radius: 50%;
+    box-shadow: 0 0 60px rgba(30, 78, 121, 0.8);
+}
+
+.planet::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: 50px;
+    width: 100px;
+    height: 30px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.shark {
+    position: absolute;
+    width: 120px;
+    top: 30px;
+    right: 20px;
+}
+
+.spaceship {
+    position: absolute;
+    width: 100px;
+    top: 50px;
+    left: 10px;
+}
