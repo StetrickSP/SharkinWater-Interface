@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+    color: white;
+}
+
+header {
+    background-color: black;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 40px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 200px;
+    margin-right: 300px;
+    transition: 0.5s ease-in-out;
+}
+.logo img:hover {
+    transform: scale(1.15);
+    
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #00d8ff;
+}
+
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h1 {
+    font-size: 50px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.hero h2 {
+    font-size: 20px;
+    font-weight: lighter;
+    margin-bottom: 40px;
+}
+
+.planet {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin: 50px auto;
+}
+
+main{
+    background: linear-gradient(to bottom, #040301, #2C63B6);
+}
+
