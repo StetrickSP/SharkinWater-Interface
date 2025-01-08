@@ -75,12 +75,66 @@ header {
 
 .planet {
     position: relative;
-    width: 200px;
-    height: 200px;
+    width: 100%;
+    height: 500px;
     margin: 50px auto;
+    border: 1px solid red;
+    
+}
+
+.planet::before {
+    position: absolute;
+    top: -10px;
+    left: 50px;
+    width: 100px;
+    height: 30px;
+    border-radius: 50%;
+    /* background: rgba(255, 255, 255, 0.3); */
 }
 
 main{
     background: linear-gradient(to bottom, #040301, #2C63B6);
+}
+.planet-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%; 
+}
+
+.content-left{
+    width: 49%; 
+    padding: 10px;
+    height: 500px;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.content-right {
+    width: 49%; 
+    height: 500px; /* Chiều cao cố định */
+    background-color: rgba(255, 255, 255, 0.1);
+    display: flex;
+    flex-direction: column; /* Xếp các phần tử theo chiều dọc */
+    justify-content: space-between; /* Trải đều các ô theo chiều dọc */
+}
+
+.latest-news{
+    width: 99%;
+    height: 150px;
+    background-color: white;
+    margin: 10px 0 10px 0;
+    border-radius: 8px;
+}
+
+.posted-articles {
+    background-color: #252D97;
+    width: 15%;
+    height: 100px;
+    margin: 20px 0px 10px 10px;
+    border-radius: 8px;
+    color: white;
+}
+
+footer{
+    background-color: #252C97;
 }
 
