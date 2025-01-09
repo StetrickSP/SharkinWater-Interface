@@ -57,7 +57,7 @@ header {
 
 .hero {
     text-align: center;
-    padding: 100px 20px;
+    padding: 1px 0;
 }
 
 .hero h1 {
@@ -136,4 +136,9 @@ main{
 
 footer{
     background-color: #252C97;
+}
+
+
+.cover img{
+    width: 100%;
 }
