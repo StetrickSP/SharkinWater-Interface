@@ -10,10 +10,13 @@ body {
     background-position: center;
     overflow-x: hidden;
     color: white;
+    min-height: 100vh; /* Đảm bảo body luôn chiếm ít nhất toàn bộ chiều cao của cửa sổ */
+    display: flex;
+    flex-direction: column;
 }
 
 header {
-    background-color: black;
+    height: 96px;
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -22,6 +25,18 @@ header {
     align-items: center;
     padding: 5px 40px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.header-ss1 {
+    background-color: #062050f6;
+}
+
+.header-ss2 {
+    background-color: #06001b;
+}
+
+.header-ss3 {
+    background-color: #ddba30;
 }
 
 .logo {
@@ -52,7 +67,7 @@ header {
 }
 
 .nav-links a:hover {
-    color: #00d8ff;
+    color: #2b56a5a6;
 }
 
 .hero {
@@ -74,28 +89,31 @@ header {
 }
 
 .planet {
-    position: relative;
+    position: center;
     width: 100%;
-    height: 500px;
+    height: 40%;
     margin: 50px auto;
-    border: 1px solid red;
-    
+    width:70%;   
 }
 
-.planet::before {
-    position: absolute;
-    top: -10px;
-    left: 50px;
-    width: 100px;
-    height: 30px;
-    border-radius: 50%;
-    /* background: rgba(255, 255, 255, 0.3); */
+main {
+    flex: 1; /* Đảm bảo main chiếm phần còn lại của chiều cao */
 }
 
-main{
-    background: linear-gradient(to bottom, #040301, #2C63B6);
+main.page-ss1 {
+    background: linear-gradient(to bottom, #13294e, #184489);   
 }
+
+main.page-ss2 {
+    background: linear-gradient(to bottom, #06001b, #2609a7);   
+}
+
+main.page-ss3 {
+    background: linear-gradient(to bottom, #f5d02d, #ae4104);   
+}
+
 .planet-content {
+    position: center;
     display: flex;
     justify-content: space-between;
     width: 100%; 
@@ -105,39 +123,56 @@ main{
     width: 49%; 
     padding: 10px;
     height: 500px;
-    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
 }
 
 .content-right {
     width: 49%; 
     height: 500px; /* Chiều cao cố định */
-    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
     display: flex;
     flex-direction: column; /* Xếp các phần tử theo chiều dọc */
     justify-content: space-between; /* Trải đều các ô theo chiều dọc */
 }
 
 .latest-news{
+    position: relative;
     width: 99%;
-    height: 150px;
-    background-color: white;
-    margin: 10px 0 10px 0;
+    margin: 0 auto;
+    height: 140px;
+    background-color: rgb(150, 178, 238);
+    margin: 10px 10px 25px 0;
     border-radius: 8px;
 }
 
 .posted-articles {
-    background-color: #252D97;
-    width: 15%;
+    background-color: #6e75d4;
+    width: 25%;
     height: 100px;
     margin: 20px 0px 10px 10px;
     border-radius: 8px;
     color: white;
 }
 
-footer{
-    background-color: #252C97;
+footer {
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
 
+footer.footer-ss1 {
+    background-color: #062050f6;
+}
+
+footer.footer-ss2 {
+    background-color: #050144;
+}
+
+footer.footer-ss3 {
+    background-color: #6b2a04;
+}
 
 .cover img{
     width: 100%;
