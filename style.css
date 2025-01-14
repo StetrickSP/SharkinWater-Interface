@@ -9,6 +9,7 @@ body {
     background-image: url('/images/stars.png'), url('/images/background.png');
     background-size: cover;
     background-position: center;
+    min-height: 100vh; /* Đảm bảo body chiếm ít nhất toàn bộ chiều cao cửa sổ */
     overflow-x: hidden;
     color: white;
 }
