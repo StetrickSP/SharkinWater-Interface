@@ -49,14 +49,15 @@
                     <span class="form-message"></span>
                   </div>
               
-                  <button class="form-submit">Gửi</button>
+                  <button id="submit">Gửi</button>
                 </form>
               
               </div>
         </section>  
-        <script src="form_validation.js"></script>     
+        <script src="form_validation.js"></script>  
+        <script src="https://cdn.sheetjs.com/xlsx-latest/package/xlsx.full.min.js"></script>  
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
         <script>
-            
             Validator({
                 form: '#form-1',
                 formGroupSelector: '.form-group',
@@ -67,11 +68,42 @@
                     Validator.isRequired('#content')
                 ],
                 onSubmit: function(data) {
-                    // Call API
+                    
                     console.log(data);
                 }
             });
         </script> 
+        <script>
+            document.addEventListener("DOMContentLoaded",() => {
+                        const name = document.getElementById("fullname");
+                        const email = document.getElementById("email");
+                        const content = document.getElementById("content");
+                        const submit = document.getElementById("submit");
+                        submit.addEventListener("click", (e) => {
+                            e.preventDefault();
+                            const data = {
+                                name: name.value,
+                                email: email.value,
+                                content: content.value,
+                            };
+                            postGoogle(data);
+                        });
+                        async function postGoogle(data){
+                            const fomrURL = 
+                            "https://docs.google.com/forms/d/e/1FAIpQLSdTN2UOLsC6rqfFojbGpPOUy-ow1i4Sl8nYkAZft0sS0n83ZA/formResponse";
+                            const formData = new FormData();
+                            formData.append("entry.1968011572", data.name);
+                            formData.append("entry.1493916107", data.email);
+                            formData.append("entry.368490362", data.content);
+                            await fetch(fomrURL, {
+                                method: "POST",
+                                body: formData,
+                            }
+                            );
+                        }
+                    }
+                    );
+        </script>
 
     </main>
     <footer class="footer-ss3">

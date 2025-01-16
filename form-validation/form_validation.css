@@ -205,7 +205,7 @@ footer.footer-ss3 {
     padding: 4px 0 0;
 }
   
-.form-submit {
+#submit {
     outline: none;
     background-color: #462200;
     margin-top: 12px;
@@ -219,7 +219,7 @@ footer.footer-ss3 {
     cursor: pointer;
 }
   
-.form-submit:hover {
+#submit:hover {
     background-color: #ff9a3b;
 }
   
