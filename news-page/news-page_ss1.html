@@ -5,6 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sharkin Water - news-page</title>
     <link rel="stylesheet" href="/news-page/news-page.css">
+    <script async defer crossorigin="anonymous" 
+        src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v16.0">
+    </script>
+    <style>
+        .fb-post {
+            width: 370; /* Tự động điều chỉnh theo nội dung */
+            height: 370; /* Tự động điều chỉnh chiều cao */
+            max-width: 100%; /* Tối đa chiều rộng */
+            overflow: hidden; /* Ẩn nội dung tràn */
+        }
+
+    </style>
 </head>
 <body>
     <header class="header-ss1">
@@ -27,24 +39,46 @@
             <h2>Yo_ng Ad_Its <br> It's not the same without 'u'!</h2>
             <div class="planet">
                 <div class="planet-content">
-
-                    <div class="content-left">
-                        <div class="latest-news">
-                            
-                        </div>
-                        <div class="latest-news">
-                            
-                        </div>
-                        <div class="latest-news">
-                            
-                        </div>
-                    </div>
-
-                    <div class="content-right">
-                        <div class="posted-articles"></div>
-                        <div class="posted-articles"></div>
-                        <div class="posted-articles"></div>
-                        <div class="posted-articles"></div>
+                    <div class="block-container">
+                        <div class="block">
+                            <!-- Facebook Embedded Post -->
+                            <div class="fb-container" style="width: 370px; height: 370px; overflow: hidden;">
+                                <div class="fb-post" 
+                                    data-href="https://www.facebook.com/photo?fbid=568860379263262&set=pcb.568860982596535" 
+                                    data-width="500"
+                                    data-show-text="false">
+                                </div>
+                            </div>
+                            <div class="custom-text">
+                                <p>Thức tỉnh</p>
+                            </div>
+                        </div> 
+                        <div class="block">
+                            <!-- Facebook Embedded Post -->
+                            <div class="fb-container" style="width: 370px; height: 375px; overflow: hidden;">
+                                <div class="fb-post" 
+                                    data-href="https://www.facebook.com/photo/?fbid=580571218092178&set=a.124811540334817" 
+                                    data-width="500"
+                                    data-show-text="false">
+                                </div>
+                            </div>
+                            <div class="custom-text">
+                                <p>Thức tỉnh</p>
+                            </div>
+                        </div> 
+                        <div class="block">
+                            <!-- Facebook Embedded Post -->
+                            <div class="fb-container" style="width: 370px; height: 375px; overflow: hidden;">
+                                <div class="fb-post" 
+                                    data-href="https://www.facebook.com/photo?fbid=583330834482883&set=a.124811560334815" 
+                                    data-width="500"
+                                    data-show-text="false">
+                                </div>
+                            </div>
+                            <div class="custom-text">
+                                <p>ƠN GIỜI DẦU ĐÂY RỒI</p>
+                            </div>
+                        </div> 
                     </div>
                 </div>
             </div>
