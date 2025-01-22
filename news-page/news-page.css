@@ -119,32 +119,6 @@ main.page-ss3 {
     width: 100%; 
 }
 
-.content-left{
-    width: 49%; 
-    padding: 10px;
-    height: 500px;
-    border-radius: 8px;
-}
-
-.content-right {
-    width: 49%; 
-    height: 500px; /* Chiều cao cố định */
-    border-radius: 8px;
-    display: flex;
-    flex-direction: column; /* Xếp các phần tử theo chiều dọc */
-    justify-content: space-between; /* Trải đều các ô theo chiều dọc */
-}
-
-.latest-news{
-    position: relative;
-    width: 99%;
-    margin: 0 auto;
-    height: 140px;
-    background-color: rgb(150, 178, 238);
-    margin: 10px 10px 25px 0;
-    border-radius: 8px;
-}
-
 .posted-articles {
     background-color: #6e75d4;
     width: 25%;
@@ -185,7 +159,7 @@ footer.footer-ss3 {
 .custom-text p {
     padding: 5px;
     font-weight: bold;
-    font-size: 24px;
+    font-size: 19px;
     color: #ffffff;
     margin-top: 10px;
 }
@@ -201,7 +175,7 @@ footer.footer-ss3 {
     padding: 20px;
     justify-content: space-between;
     width: 410px; /* Kích thước cố định cho chiều rộng */
-    height: 450px; /* Kích thước cố định cho chiều cao */
+    height: 470px; /* Kích thước cố định cho chiều cao */
     margin: 10px 0;
     background-color: #ffffff0a;
     border-radius: 20px;
