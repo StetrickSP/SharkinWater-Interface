@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 paginationContainer.appendChild(pageButton);
             } else if (
                 (i === currentPage - 2 || i === currentPage + 2) &&
-                totalPages > 5
+                totalPages >= 4
             ) {
                 const ellipsis = document.createElement('span');
                 ellipsis.textContent = '...';
