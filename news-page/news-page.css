@@ -67,7 +67,8 @@ header {
 }
 
 .nav-links a:hover {
-    color: #2b56a5a6;
+    color: #ffffff86;
+    transform: scale(1.05); /* Phóng to block một chút */
 }
 
 .hero {
@@ -119,32 +120,6 @@ main.page-ss3 {
     width: 100%; 
 }
 
-.content-left{
-    width: 49%; 
-    padding: 10px;
-    height: 500px;
-    border-radius: 8px;
-}
-
-.content-right {
-    width: 49%; 
-    height: 500px; /* Chiều cao cố định */
-    border-radius: 8px;
-    display: flex;
-    flex-direction: column; /* Xếp các phần tử theo chiều dọc */
-    justify-content: space-between; /* Trải đều các ô theo chiều dọc */
-}
-
-.latest-news{
-    position: relative;
-    width: 99%;
-    margin: 0 auto;
-    height: 140px;
-    background-color: rgb(150, 178, 238);
-    margin: 10px 10px 25px 0;
-    border-radius: 8px;
-}
-
 .posted-articles {
     background-color: #6e75d4;
     width: 25%;
@@ -185,7 +160,7 @@ footer.footer-ss3 {
 .custom-text p {
     padding: 5px;
     font-weight: bold;
-    font-size: 24px;
+    font-size: 19px;
     color: #ffffff;
     margin-top: 10px;
 }
@@ -201,7 +176,7 @@ footer.footer-ss3 {
     padding: 20px;
     justify-content: space-between;
     width: 410px; /* Kích thước cố định cho chiều rộng */
-    height: 450px; /* Kích thước cố định cho chiều cao */
+    height: 470px; /* Kích thước cố định cho chiều cao */
     margin: 10px 0;
     background-color: #ffffff0a;
     border-radius: 20px;
@@ -213,4 +188,65 @@ footer.footer-ss3 {
 .fb-post {
     margin: 0 auto; /* Căn giữa fb-post */
     max-width: 100%; /* Tối đa chiều rộng */
+    width: 370; /* Tự động điều chỉnh theo nội dung */
+    height: 370; /* Tự động điều chỉnh chiều cao */
+    max-width: 100%; /* Tối đa chiều rộng */
+    overflow: hidden; /* Ẩn nội dung tràn */
+}
+
+.video-post {
+    width: 370px;
+    height: 370px;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.block {
+    display: none;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #f9f9f90e;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.block.active {
+    display: block;
+}
+
+/* Hiệu ứng hover (di chuột qua block) */
+.block:hover {
+    transform: scale(1.05); /* Phóng to block một chút */
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.37); /* Hiệu ứng glow */
+}
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    margin-top: 20px;
+    
+}
+
+.pagination button {
+    padding: 5px 10px;
+    border: 1px solid #cccccc00;
+    border-radius: 40%;
+    background-color: rgba(255, 255, 255, 0.199);
+    cursor: pointer;
+}
+
+.pagination button.active {
+    background-color: blue;
+    color: rgb(255, 255, 255);
+}
+
+.pagination button:disabled {
+    background-color: rgba(255, 255, 255, 0.199);
+    cursor: not-allowed;
+}
+
+.pagination button:hover {
+    background-color: #ffffff69;
 }
