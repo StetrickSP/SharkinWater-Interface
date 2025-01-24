@@ -187,4 +187,54 @@ footer.footer-ss3 {
 .fb-post {
     margin: 0 auto; /* Căn giữa fb-post */
     max-width: 100%; /* Tối đa chiều rộng */
+    width: 370; /* Tự động điều chỉnh theo nội dung */
+    height: 370; /* Tự động điều chỉnh chiều cao */
+    max-width: 100%; /* Tối đa chiều rộng */
+    overflow: hidden; /* Ẩn nội dung tràn */
+}
+
+.video-post {
+    width: 370px;
+    height: 370px;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.block {
+    display: none;
+}
+
+.block.active {
+    display: block;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    margin-top: 20px;
+    
+}
+
+.pagination button {
+    padding: 5px 10px;
+    border: 1px solid #cccccc00;
+    border-radius: 40%;
+    background-color: rgba(255, 255, 255, 0.199);
+    cursor: pointer;
+}
+
+.pagination button.active {
+    background-color: blue;
+    color: rgb(255, 255, 255);
+}
+
+.pagination button:disabled {
+    background-color: rgba(255, 255, 255, 0.199);
+    cursor: not-allowed;
+}
+
+.pagination button:hover {
+    background-color: #ffffff69;
 }
