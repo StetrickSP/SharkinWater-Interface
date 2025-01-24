@@ -67,7 +67,8 @@ header {
 }
 
 .nav-links a:hover {
-    color: #2b56a5a6;
+    color: #ffffff86;
+    transform: scale(1.05); /* Phóng to block một chút */
 }
 
 .hero {
