@@ -202,12 +202,23 @@ footer.footer-ss3 {
 
 .block {
     display: none;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #f9f9f90e;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .block.active {
     display: block;
 }
 
+/* Hiệu ứng hover (di chuột qua block) */
+.block:hover {
+    transform: scale(1.05); /* Phóng to block một chút */
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.37); /* Hiệu ứng glow */
+}
 .pagination {
     display: flex;
     justify-content: center;
