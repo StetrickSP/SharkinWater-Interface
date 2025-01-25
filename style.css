@@ -15,6 +15,7 @@ body {
 }
 
 header {
+    height: 96px;
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -23,6 +24,10 @@ header {
     align-items: center;
     padding: 5px 40px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.header-ss1 {
+    background-color: #062050f6;
 }
 
 .logo {
@@ -37,6 +42,7 @@ header {
 }
 .logo img:hover {
     transform: scale(1.15);
+    
 }
 
 .nav-links {
@@ -44,15 +50,16 @@ header {
     gap: 30px;
 }
 
-.nav-links a img{
-    width: 150px;
-    height: 50px;
+.nav-links a {
+    text-decoration: none;
     color: white;
-    transition: 0.3s;
+    font-size: 25px;
+    transition: color 0.3s;
 }
 
-.nav-links a img:hover {
-    transform: scale(1.1);
+.nav-links a:hover {
+    color: #ffffff86;
+    transform: scale(1.05); /* Phóng to block một chút */
 }
 
 .hero {
@@ -77,24 +84,4 @@ header {
     border-radius: 5px;
 }
 
-.planet {
-    position: relative;
-    width: 200px;
-    height: 200px;
-    margin: 50px auto;
-    /* background: radial-gradient(circle, #1e4e79, #000); */
-    /* border-radius: 50%;
-    box-shadow: 0 0 60px rgba(30, 78, 121, 0.8); */
-}
-
-.planet::before {
-    content: '';
-    position: absolute;
-    top: -10px;
-    left: 50px;
-    width: 100px;
-    height: 30px;
-    border-radius: 50%;
-    /* background: rgba(255, 255, 255, 0.3); */
-}
 
