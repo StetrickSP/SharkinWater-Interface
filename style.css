@@ -23,7 +23,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 15px 100px 0px 60px;
-    background-color: rgba(0, 0, 139, 0.5);
+    background-color: rgba(0, 0, 139, 1);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
 }
 /*  Taskbar  */
@@ -203,6 +203,6 @@ header {
 }
 
 footer{
-    background-color: rgba(0, 0, 139, 0.5);
+    background-color: rgba(0, 0, 139, 0.8);
     box-shadow: 0 4px 6px rgba(0, 0, 139, 1);
 }
