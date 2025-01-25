@@ -13,6 +13,7 @@ body {
     overflow-x: hidden;
 }
 
+/*  Taskbar  */
 header {
     height: 100px;
     position: sticky;
@@ -24,7 +25,9 @@ header {
     padding: 15px 100px 0px 60px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
+/*  Taskbar  */
 
+/* Home Section */
 .hero {
     min-height: 100vh;
     background-image: url("/images/background.png");
@@ -62,7 +65,7 @@ header {
 }
 
 .menu-welcome .btn{
-    color: black;
+    color: rgba(0, 0, 139, 1);
     font-size: 20px;
     margin: 0 auto;
     transition: 0.5s ease-in-out;
@@ -82,6 +85,54 @@ header {
     justify-content: center;
     margin: 0 auto;
     transition: 0.5s ease-in-out;
+}
+
+.items .seasons{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 50px;
+}
+/* Home Section */
+
+/* About Us */
+.about-us {
+    width: 100%;
+    padding: 78px 0px;
+    background-image: url("/images/background_overall.png");
+}
+.about-text{
+    width: 550px;
+    width: 50%;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    background-color: rgba(0, 0, 139, 0.2);
+    border-radius: 10px;
+}
+.about-text h1{
+    color: rgba(0, 0, 139, 1);
+    font-size: 80px;
+    transition: 0.5s ease-in-out;
+    width: 87%; /*boxed button code from here*/
+    padding: 10px 20px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px white;
+}
+.about-text h2{
+    color: white;
+    font-size: 30px;
+    margin-left: 50px;
+}
+.main{
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 
 
