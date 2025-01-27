@@ -98,109 +98,92 @@ header {
 /* Home Section */
 
 /* About Us */
-.about-us {
-    width: 100%;
-    padding: 78px 0px;
-    background-image: url("/images/background_overall.png");
-}
-.main{
-    width: 1130px;
-    max-width: 95%;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-.about-text{
-    width: 550px;
+img.taskbar_about {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     width: 50%;
-    letter-spacing: 1.5px;
-    text-transform: uppercase;
-    background-color: rgba(0, 0, 139, 0.2);
-    border-radius: 10px;
-    transition: 0.5s ease-in-out;
+   }
+
+.main{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
 }
-.about-text:hover{
-    transform: translateY(-10px);
-    box-shadow: 0px 0px 50px rgba(0, 0, 139, 0.1);
+
+@keyframes rollIn {
+    0% {
+        transform: translateX(-100%) rotate(0deg);
+    }
+    50% {
+        transform: translateX(-50%) rotate(180deg);
+    }
+    100% {
+        transform: translateX(0) rotate(360deg);
+    }
 }
-.about-text h1{
-    color: rgba(0, 0, 139, 1);
-    font-size: 80px;
-    transition: 0.5s ease-in-out;
-    width: 87%; /*boxed button code from here*/
-    padding: 10px 20px;
-    letter-spacing: 1.5px;
-    text-transform: uppercase;
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0px 0px 20px white;
+
+.main .planet_about_us img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 150%;
+    position: relative;
+    left: -100%; /* Bắt đầu từ bên trái màn hình */
+    transition: left 1s cubic-bezier(0.25, 0.1, 0.25, 1); /* Hiệu ứng chuyển động mượt mà hơn */
 }
-.about-text h2{
-    color: white;
-    font-size: 30px;
-    margin-left: 50px;
+
+.main .planet_about_us img.scroll-in {
+    left: 0%; /* Di chuyển vào giữa màn hình */
+    transform: translateX(-40%); /* Căn giữa */
+    animation: rollIn 5s cubic-bezier(0.25, 0.1, 0.25, 1) forwards; /* Kích hoạt animation lăn tròn */
+}
+
+.main .about-us-text img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.main .about-us-text img:hover {
+    transform: scale(1.1);  
 }
 /* About Us */
 
-/* Seasons */
-.seasons {
-    width: 100%;
-    padding: 50px 0px;
-}
-.seasons .our-story {
-    width: 50%;
-    height: 50%;
-    display: flex;
-    justify-content: center;
-    margin: 0 auto;
-    transition: 0.5s ease-in-out;
-}
+/* Our Story */
+img.taskbar_ourstory {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+   }
+
 .items {
     display: flex;
-    justify-content: space-evenly;
-}
-.items .item{
-    display: inline-block;
-    width: 330px;
-    height: 330px;
-    border-radius: 10px;
-    background-color: rgba(0, 0, 139, 0.5);
-    transition: 0.5s ease-in-out;
-}
-.items .item:hover{
-    transform: translateY(-10px);
-    box-shadow: 0px 0px 50px rgba(0, 0, 139, 0.1);
-}
-.items .item img{
-    width: 250px;
-    height: 250px;
-    display: flex;
     justify-content: center;
-    margin: 0 auto;
-    border-radius: 25%;
-    transition: 0.5s ease-in-out;
-}
-.items .item p{
-    color: white;
-    font-size: 20px;
-    text-align: center;
-    transition: 0.5s ease-in-out;
-}
-.items .item h2{
-    width: 45%; /*boxed button code from here*/
-    padding: 5px;
-    text-align: center;
-    text-transform: uppercase;
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0px 0px 20px white;
+    gap: 50px;
 }
 
-.pillars img{
+.items .item {
+    margin-left: auto;
+    margin-right: auto;
     width: 100%;
-    height: 100%;
 }
+
+.items .item img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.items .item img:hover {
+    transform: scale(1.1);  
+}
+/* Our Story */
 
 footer{
     background-color: rgba(0, 0, 139, 0.6);
