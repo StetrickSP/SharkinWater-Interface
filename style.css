@@ -206,8 +206,8 @@ img.taskbar_ourstory {
 .block img{
     padding: 20px;
     justify-content: space-between;
-    width: 410px; /* Kích thước cố định cho chiều rộng */
-    height: 470px; /* Kích thước cố định cho chiều cao */
+    width: 430px; /* Kích thước cố định cho chiều rộng */
+    height: 560px; /* Kích thước cố định cho chiều cao */
     margin: 10px 0;
     border-radius: 20px;
     box-sizing: border-box;
