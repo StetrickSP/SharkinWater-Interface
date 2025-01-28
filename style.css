@@ -9,8 +9,11 @@ body {
   background-image: url("/images/background_overall.png");
   background-size: cover;
   background-position: center;
-  min-height: 100%; /* Đảm bảo body chiếm ít nhất toàn bộ chiều cao cửa sổ */
+  min-height: 100vh; /* Ensure body always takes up at least the full height of the viewport */
   overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  background-repeat: no-repeat;
 }
 
 /* Home Section */
@@ -18,8 +21,22 @@ body {
   min-height: 100vh;
   padding-top: 50px;
   background-image: url("/images/homepagefinal.png");
-  background-size: cover;
+  background-size: 100%;
+  background-position: top;
   background-repeat: no-repeat;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  body {
+    background-size: cover; /* Ensure the background image covers the entire container */
+    background-position: center; /* Center the background image */
+  }
+
+  .hero {
+    background-size: cover; /* Ensure the background image covers the entire container */
+    background-position: center; /* Center the background image */
+  }
 }
 
 .header {
@@ -79,8 +96,9 @@ body {
   }
 
   .nav-links a {
-    font-size: 16px; /* Set a minimum font size for smaller screens */
+    font-size: 12px; /* Set a minimum font size for smaller screens */
   }
+
 }
 
 .menu-welcome {
@@ -90,32 +108,46 @@ body {
   align-items: center;
   gap: 20px;
   margin-top: 13%;
-  scale: 1.5;
+  object-fit: cover;
 }
 .menu-welcome .btn {
   color: rgba(0, 0, 139, 1);
-  font-size: 20px;
+  font-size: 1.5vw; /* Adjust font size based on viewport width */
   margin: 0 auto;
   transition: 0.5s ease-in-out;
   text-align: center;
-  width: 25%;
-  padding: 10px 20px;
-  letter-spacing: 1.5px;
+  width: 35vw; /* Adjust width based on viewport width */
+  padding: 1vh 2vw; /* Adjust padding based on viewport units */
+  letter-spacing: 0.15vw; /* Adjust letter spacing based on viewport width */
   text-transform: uppercase;
   background-color: white;
-  border-radius: 20px;
-  box-shadow: 0px 0px 20px white;
+  border-radius: 1vw; /* Adjust border radius based on viewport width */
+  box-shadow: 0px 0px 2vw white; /* Adjust box shadow based on viewport width */
 }
+
 .menu-welcome img {
-  width: 500px;
-  height: 150px;
+  width: 50%;
+  height: auto;
   display: flex;
   justify-content: center;
   margin: 0 auto;
   transition: 0.5s ease-in-out;
 }
 
-/* Home Section */
+/* Responsive styles */
+@media (max-width: 768px) {
+  .menu-welcome img {
+    width: 80%;
+    margin-top: 10vh;
+  }
+  
+  .menu-welcome .btn {
+    font-size: 2.3vw; /* Adjust font size for smaller screens */
+    width: 55vw; /* Adjust width for smaller screens */
+    padding: 2vh 4vw; /* Adjust padding for smaller screens */
+    border-radius: 4vw; /* Adjust border radius for smaller screens */ 
+  }
+}
 
 /* About Us */
 img.taskbar_about {
