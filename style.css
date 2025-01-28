@@ -117,12 +117,6 @@ body {
     transition: 0.5s ease-in-out;
 }
 
-.items .seasons{
-    display: flex;
-    justify-content: center;
-    gap: 50px;
-    margin-top: 50px;
-}
 /* Home Section */
 
 /* About Us */
@@ -136,7 +130,11 @@ img.taskbar_about {
 .main{
     display: flex;
     justify-content: center;
-    gap: 50px;
+    scale: 1;
+    flex-wrap: wrap;
+    gap: 20px; /* Khoảng cách giữa các khối */
+    width: 100%; /* Chiếm toàn bộ chiều rộng */
+    height: 100%; /* Chiếm toàn bộ chiều cao */
 }
 
 @keyframes rollIn {
@@ -152,10 +150,10 @@ img.taskbar_about {
 }
 
 .main .planet_about_us img {
-    display: block;
+    display: flex;
     margin-left: auto;
     margin-right: auto;
-    width: 150%;
+    width: 200%;
     position: relative;
     left: -100%; /* Bắt đầu từ bên trái màn hình */
     transition: left 1s cubic-bezier(0.25, 0.1, 0.25, 1); /* Hiệu ứng chuyển động mượt mà hơn */
@@ -163,15 +161,21 @@ img.taskbar_about {
 
 .main .planet_about_us img.scroll-in {
     left: 0%; /* Di chuyển vào giữa màn hình */
-    transform: translateX(-40%); /* Căn giữa */
+    transform: translateX(-50%); /* Căn giữa */
     animation: rollIn 5s cubic-bezier(0.25, 0.1, 0.25, 1) forwards; /* Kích hoạt animation lăn tròn */
+}
+
+@media (max-width: 768px) {
+    .main .planet_about_us img {
+        width: 80%;
+    }
 }
 
 .main .about-us-text img {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 70%;
+    width: 100%;
     transition: transform 0.3s ease-in-out;
 }
 
@@ -188,29 +192,35 @@ img.taskbar_ourstory {
     width: 60%;
    }
 
-.items {
+
+.block-container {
+    scale: 1;
     display: flex;
-    justify-content: center;
-    gap: 50px;
+    flex-wrap: wrap;
+    gap: 20px; /* Khoảng cách giữa các khối */
+    justify-content: center; /* Căn giữa các khối */
+    width: 100%; /* Chiếm toàn bộ chiều rộng */
+    height: 100%; /* Chiếm toàn bộ chiều cao */
 }
 
-.items .item {
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
+.block img{
+    padding: 20px;
+    justify-content: space-between;
+    width: 410px; /* Kích thước cố định cho chiều rộng */
+    height: 470px; /* Kích thước cố định cho chiều cao */
+    margin: 10px 0;
+    border-radius: 20px;
+    box-sizing: border-box;
+    flex: 0 0 auto; /* Giữ kích thước cố định */
+    align-items: center;
+    animation: transform 0.3s ease-in-out; 
 }
 
-.items .item img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 70%;
-    transition: transform 0.3s ease-in-out;
+.block img:hover {
+    transform: scale(1.05); /* Phóng to block một chút */
 }
 
-.items .item img:hover {
-    transform: scale(1.1);  
-}
+
 /* Our Story */
 
 footer{
